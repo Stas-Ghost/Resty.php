@@ -723,6 +723,10 @@ class Resty
 				'header'=>$headerarr,
 				'ignore_errors'=>1,
 				'max_redirects'=>$max_redirects
+			),
+			'ssl' => array(
+				'verify_peer'=>false,
+				'verify_peer_name'=>false
 			)
 		);
 
